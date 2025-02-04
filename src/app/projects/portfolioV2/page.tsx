@@ -25,7 +25,7 @@ export default function Page() {
       "Ensured responsive design and fast performance",
     ],
     technologies: ["Next.js", "React", "Framer Motion", "Tailwind CSS", "ShadCN"],
-    images: ["/images/PortfolioImage1.png", "/images/PortfolioImage2.png"],
+    images: ["/images/PortfolioV2Image1.png", "/images/PortfolioV2Image2.png", "/images/PortfolioV2Image3.png", "/images/PortfolioV2Image4.png"],
     liveDemo: "https://your-portfolio-v1-url.com",
     github: "https://github.com/YourUsername/PortfolioV2",
   }

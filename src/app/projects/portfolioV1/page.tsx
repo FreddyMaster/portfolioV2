@@ -25,7 +25,7 @@ export default function Page() {
       "Ensured responsive design and fast performance",
     ],
     technologies: ["SvelteKit", "Tailwind CSS", "Skeleton UI"],
-    images: ["/images/PortfolioImage1.png", "/images/PortfolioImage2.png"],
+    images: ["/images/PortfolioV1Image1.png", "/images/PortfolioV1Image2.png", "/images/PortfolioV1Image3.png", "/images/PortfolioV1Image4.png"],
     liveDemo: "https://your-portfolio-v1-url.com",
     github: "https://github.com/FreddyMaster/portfolioV1",
   }
