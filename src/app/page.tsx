@@ -12,19 +12,19 @@ export default function Home() {
                 <Splash />
             </section>
             <ScrollArrow />
-            <section id="about" className="text=left">
+            <section id="about" className="text=left pt-32">
                 <About />
             </section>
 
-            <section id="skills" className="text-left">
+            <section id="skills" className="pt-32 text-left">
                 <Skills />
             </section>
 
-            <section id="projects" className="text-left">
+            <section id="projects" className="pt-32 text-left">
                 <Projects />
             </section>
 
-            <section id="contact" className="text-left">
+            <section id="contact" className="pt-32 text-left">
                 <Contact />
             </section>
         </div>
