@@ -32,6 +32,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 })
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Alexander Gervais Portfolio",
   description: "Alexander Gervais Portfolio Built with Next.js",
