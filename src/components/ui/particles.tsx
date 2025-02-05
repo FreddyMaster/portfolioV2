@@ -97,7 +97,7 @@ export const Particles: React.FC<ParticlesProps> = ({
   const canvasSize = useRef<{ w: number; h: number }>({ w: 0, h: 0 });
   const dpr = typeof window !== "undefined" ? window.devicePixelRatio : 1;
   const rafID = useRef<number | null>(null);
-  const resizeTimeout = useRef<NodeJS.Timeout | null>(null);
+  const resizeTimeout = useRef<NodeJS.Timeout>();
 
   useEffect(() => {
     if (canvasRef.current) {
@@ -126,22 +126,20 @@ export const Particles: React.FC<ParticlesProps> = ({
       }
       window.removeEventListener("resize", handleResize);
     };
-  });
+  }, [color]);
 
   useEffect(() => {
     onMouseMove();
-  });
+  }, [mousePosition.x, mousePosition.y]);
+
+  useEffect(() => {
+    initCanvas();
+  }, [refresh]);
+
   const initCanvas = () => {
     resizeCanvas();
     drawParticles();
   };
-
-  useEffect(() => {
-    initCanvas();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [refresh]);
-
-
 
   const onMouseMove = () => {
     if (canvasRef.current) {
