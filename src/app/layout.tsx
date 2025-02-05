@@ -5,7 +5,6 @@ import { AnimatedNavLinks } from "@/components/ui/animated-tabs"
 import { ModeToggle } from "@/components/ui/theme-toggle"
 import Footer from "@/components/footer"
 import { Toaster } from "@/components/ui/toaster"
-import Transition from "@/components/transition"
 import "./globals.css"
 import Link from "next/link"
 import { Menu } from "lucide-react"
@@ -48,7 +47,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Transition>
             <nav className="top-0 z-50 sticky bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 p-4 border-b border-border/40 w-full">
               <div className="flex justify-between items-center mx-auto container">
                 <Link href="/" className="font-semibold text-foreground/80 text-xl">
@@ -89,7 +87,6 @@ export default function RootLayout({
             <main className="mx-auto px-4 py-8 container">{children}</main>
             <Toaster />
             <Footer />
-          </Transition>
         </ThemeProvider>
       </body>
     </html>
