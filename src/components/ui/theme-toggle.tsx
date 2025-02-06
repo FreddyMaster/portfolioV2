@@ -20,11 +20,16 @@ export function ModeToggle() {
   }
 
   return (
-        <Button variant="outline" size="icon" onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+        <Button
+          variant="outline"
+          size="icon"
+          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+          aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
+        >
           {theme === "light" ? (
-          <Sun className="w-[1.2rem] h-[1.2rem] transition-all" />
+            <Sun className="w-[1.2rem] h-[1.2rem] transition-all" />
           ) : (
-          <Moon className="w-[1.2rem] h-[1.2rem] transition-all" />
+            <Moon className="w-[1.2rem] h-[1.2rem] transition-all" />
           )}
         </Button>
   )
