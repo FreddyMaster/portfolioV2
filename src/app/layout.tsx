@@ -20,6 +20,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import type React from "react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -84,7 +85,10 @@ export default function RootLayout({
                 </div>
               </div>
             </nav>
-            <main className="mx-auto px-4 py-8 container">{children}</main>
+            <main className="mx-auto px-4 py-8 container">
+              {children}
+              <SpeedInsights/>
+            </main>
             <Toaster />
             <Footer />
         </ThemeProvider>
