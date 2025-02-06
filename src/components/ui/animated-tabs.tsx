@@ -42,9 +42,9 @@ export function AnimatedNavLinks() {
                             onMouseEnter={() => setHoveredLink(label)}
                             onMouseLeave={() => setHoveredLink(null)}
                         >
-                            <li className="block relative z-10 px-5 py-3 w-full h-full hover:text-background dark:text-muted-foreground cursor-pointer mix-blend-difference">
+                            <span className="block relative z-10 px-5 py-3 w-full h-full hover:text-background dark:text-muted-foreground cursor-pointer mix-blend-difference">
                             {label}
-                            </li>
+                            </span>
                         </a>
                     );
                 })}

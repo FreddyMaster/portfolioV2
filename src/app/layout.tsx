@@ -59,9 +59,9 @@ export default function RootLayout({
                 <div className="md:hidden">
                   <Sheet>
                     <SheetTrigger asChild>
-                      <button className="p-2">
+                        <button className="p-2" aria-label="Open navigation menu">
                         <Menu className="w-6 h-6" />
-                      </button>
+                        </button>
                     </SheetTrigger>
                     <SheetContent side="right" className="flex flex-col justify-between min-w-64">
                       <SheetHeader>
