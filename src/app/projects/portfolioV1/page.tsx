@@ -26,7 +26,7 @@ export default function Page() {
     ],
     technologies: ["SvelteKit", "Tailwind CSS", "Skeleton UI"],
     images: ["/images/PortfolioV1Image1.png", "/images/PortfolioV1Image2.png", "/images/PortfolioV1Image3.png", "/images/PortfolioV1Image4.png"],
-    liveDemo: "https://your-portfolio-v1-url.com",
+    liveDemo: "https://alexandergervaisportfolio.pages.dev/",
     github: "https://github.com/FreddyMaster/portfolioV1",
   }
 

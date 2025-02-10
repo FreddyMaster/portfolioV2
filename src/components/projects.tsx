@@ -30,7 +30,7 @@ const projects: Project[] = [
         image: "/images/PortfolioV2Image1.png",
         tags: ["Next.js", "React", "Framer Motion", "Tailwind CSS", "ShadCN"],
         date: "January 2025",
-        demoUrl: "https://alexandergervaisporfoliov1.pages.dev",
+        demoUrl: "https://alexander-gervais-portfolio.vercel.app/",
         learnMoreUrl: "/projects/portfolioV2",
     },
     {
@@ -50,7 +50,7 @@ const projects: Project[] = [
         image: "/images/PortfolioV1Image1.png",
         tags: ["SvelteKit", "Tailwind CSS", "Skeleton UI"],
         date: "November 2024",
-        demoUrl: "https://alexandergervaisporfoliov1.pages.dev",
+        demoUrl: "https://alexandergervaisporfolio.pages.dev",
         learnMoreUrl: "/projects/portfolioV1",
     },
     {
@@ -79,7 +79,7 @@ const projects: Project[] = [
 export default function Projects() {
   return (
     <section className="mx-auto px-4 py-8 container">
-      <h1 className="mb-8 font-bold text-3xl text-foreground md:text-4xl">Projects</h1>
+      <h1 className="mb-8 font-bold text-foreground text-3xl md:text-4xl">Projects</h1>
       <Carousel
         opts={{
           align: "start",
@@ -106,7 +106,7 @@ export default function Projects() {
                 </SpotlightCard.Title>
                 <span className="font-semibold text-muted-foreground text-sm">{project.date}</span>
               </div>
-              <p className="mb-4 line-clamp-3 md:line-clamp-4 text-muted-foreground text-sm">
+              <p className="mb-4 text-muted-foreground text-sm line-clamp-3 md:line-clamp-4">
                 {project.description}
               </p>
             </SpotlightCard.Content>
@@ -138,8 +138,8 @@ export default function Projects() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="sm:visible invisible" />
-        <CarouselNext className="sm:visible invisible" />
+        <CarouselPrevious className="invisible sm:visible" />
+        <CarouselNext className="invisible sm:visible" />
 
       </Carousel>
     </section>
