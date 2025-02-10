@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <div>
       <BlurFade delay={0}>
-      <h2 className="font-bold text-4xl dark:text-white">Skills</h2>
+      <h2 className="font-bold dark:text-white text-4xl">Skills</h2>
       </BlurFade>
       <div className="flex flex-col gap-4 m-4">
         <BlurFade delay={0.25}>
@@ -44,10 +44,9 @@ export default function Skills() {
 export const skillsData = {
   programmingLanguages: [
     { title: "Python", icon: "logos:python", link: "https://www.python.org/" },
-    { title: "C/C++", icon: "logos:c-plusplus", link: "https://isocpp.org/" },
-    { title: "C#", icon: "logos:c-sharp", link: "https://learn.microsoft.com/en-us/dotnet/csharp/" },
-    { title: "Java", icon: "logos:java", link: "https://www.java.com/" },
     { title: "JavaScript", icon: "logos:javascript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+    { title: "TypeScript", icon: "devicon:typescript", link: "https://www.typescriptlang.org/" },
+    { title: "SQL", icon: "logos:mysql-icon", link: "https://www.mysql.com/" },
   ],
   frontEnd: [
     { title: "React", icon: "logos:react", link: "https://reactjs.org/" },
@@ -60,15 +59,13 @@ export const skillsData = {
     { title: "Node.js", icon: "logos:nodejs-icon", link: "https://nodejs.org/" },
     { title: "Prisma", icon: "file-icons:prisma", link: "https://www.prisma.io/" },
     { title: "Flask", icon: "file-icons:flask", link: "https://flask.palletsprojects.com/" },
-    { title: "MySQL", icon: "logos:mysql-icon", link: "https://www.mysql.com/" },
-    { title: "PostgreSQL", icon: "logos:postgresql", link: "https://www.postgresql.org/" },
   ],
   otherSkills: [
-    { title: "Cloudflare", icon: "logos:cloudflare-icon", link: "https://www.cloudflare.com/" },
-    { title: "Windows", icon: "logos:microsoft-windows-icon", link: "https://www.microsoft.com/en-us/windows" },
-    { title: "Linux", icon: "logos:linux-tux", link: "https://www.linux.org/" },
     { title: "Git", icon: "logos:git-icon", link: "https://git-scm.com/" },
     { title: "Docker", icon: "logos:docker-icon", link: "https://www.docker.com/" },
+    { title: "Cloudflare", icon: "logos:cloudflare-icon", link: "https://www.cloudflare.com/" },
+    { title: "Vercel", icon: "tabler:brand-vercel-filled", link: "https://vercel.com" },
+    { title: "Transformers", icon: "fluent-emoji:hugging-face", link: "https://huggingface.co/docs/transformers/en/index" },
   ],
 };
 
