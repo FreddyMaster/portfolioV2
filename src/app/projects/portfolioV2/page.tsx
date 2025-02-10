@@ -27,7 +27,7 @@ export default function Page() {
     technologies: ["Next.js", "React", "Framer Motion", "Tailwind CSS", "ShadCN"],
     images: ["/images/PortfolioV2Image1.png", "/images/PortfolioV2Image2.png", "/images/PortfolioV2Image3.png", "/images/PortfolioV2Image4.png"],
     liveDemo: "https://alexander-gervais-portfolio.vercel.app/",
-    github: "https://github.com/YourUsername/PortfolioV2",
+    github: "https://github.com/FreddyMaster/portfolioV2",
   }
 
   return <ProjectPage {...projectData} />
